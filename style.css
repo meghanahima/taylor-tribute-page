@@ -1,0 +1,108 @@
+body{
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size:20px;
+}
+.head{
+    margin-top:35px;
+    text-align:center;
+    margin-bottom:30px;
+}
+.artist{
+    font-size: 50px;
+    font-weight: 600;
+    /* text-fill-color: -webkit-linear-gradient(pink,grey); */
+    color:#f75b00;
+    /* border:2px solid pink; */
+}
+.birthdate{
+    /* border:2px solid yellow; */
+    font-size:20px;
+}
+.container{
+    /* border:2px solid red; */
+    margin:0 8px 45px 8px;
+    /* margin-left:5px;
+    margin
+    margin-bottom:45px; */
+}
+.inside-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.img1{
+    /* border:2px solid green; */
+    width:400px;
+    height:400px;
+    margin-right:35px;
+}
+.img1 img{
+    width:400px;
+    height:400px;
+    object-fit: contain;
+}
+.img2{
+    /* border:2px solid green; */
+    width:300px;
+    height:300px;
+    margin-left:35px;
+}
+.img2 img{
+    width:300px;
+    height:300px;
+    object-fit: contain;
+}
+.matter1{
+    /* border:2px solid blue; */
+    width:570px;
+    margin-left:35px;
+}
+.matter2{
+    width:700px;
+    margin-right:35px;
+}
+.submatter2{
+    margin-left:10px;
+}
+.subhead{
+    font-size: 30px;
+    color:#ff822d;
+}
+hr{
+    margin-top:25px;
+    width:15%;
+}
+.madeby{
+    text-align: center;
+    color:#e0dbd8;
+    font-size: 15px;
+}
+@media screen and (max-width: 870px){
+    .img1,.img2,.matter1,.matter2{
+        margin:0 auto;
+    }
+    .inside-container{
+        flex-direction: column;
+    }
+    .matter1,.matter2{
+        width:70%;
+    }
+    .image2{
+        order: 0;
+    }
+    .matter2{
+        order: 1;
+    }
+}
+@media screen and (max-width: 550px){
+    .matter1,.matter2{
+        width:85%;
+    }
+    .page{
+        padding:10px;
+    }
+}
