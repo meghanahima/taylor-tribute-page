@@ -14,39 +14,28 @@ body{
 .artist{
     font-size: 50px;
     font-weight: 600;
-    /* text-fill-color: -webkit-linear-gradient(pink,grey); */
     color:#f75b00;
-    /* border:2px solid pink; */
 }
 .birthdate{
-    /* border:2px solid yellow; */
     font-size:20px;
 }
 .container{
-    /* border:2px solid red; */
     margin:0 8px 45px 8px;
-    /* margin-left:5px;
-    margin
-    margin-bottom:45px; */
-}
-.inside-container{
     display:flex;
     justify-content:center;
     align-items:center;
 }
 .img1{
-    /* border:2px solid green; */
     width:400px;
-    height:400px;
+    height:360px;
     margin-right:35px;
 }
 .img1 img{
     width:400px;
-    height:400px;
+    height:360px;
     object-fit: contain;
 }
 .img2{
-    /* border:2px solid green; */
     width:300px;
     height:300px;
     margin-left:35px;
@@ -57,16 +46,12 @@ body{
     object-fit: contain;
 }
 .matter1{
-    /* border:2px solid blue; */
     width:570px;
     margin-left:35px;
 }
 .matter2{
     width:700px;
     margin-right:35px;
-}
-.submatter2{
-    margin-left:10px;
 }
 .subhead{
     font-size: 30px;
@@ -83,26 +68,19 @@ hr{
 }
 @media screen and (max-width: 870px){
     .img1,.img2,.matter1,.matter2{
-        margin:0 auto;
+        margin-left:0;
+        margin-right:0;
     }
-    .inside-container{
+    .container{
         flex-direction: column;
     }
     .matter1,.matter2{
-        width:70%;
+        width:90%;
     }
     .image2{
         order: 0;
     }
     .matter2{
         order: 1;
-    }
-}
-@media screen and (max-width: 550px){
-    .matter1,.matter2{
-        width:85%;
-    }
-    .page{
-        padding:10px;
     }
 }
